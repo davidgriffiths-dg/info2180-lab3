@@ -4,7 +4,7 @@ function gameFunction() {
 
 let cells = document.getElementById("board").children;
 
-const winning_combinations = [
+var winning_combinations = [
     [0, 1, 2],
     [3, 4, 5],
     [6, 7, 8],
