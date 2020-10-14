@@ -19,7 +19,12 @@ let cells = document.getElementById("board").children;
     cells[i].addEventListener('mouseover',function(e) { e.target.classList.add('hover') });
     cells[i].addEventListener('mouseout',function(e) { e.target.classList.remove('hover') });
 
-
+    const restartGame = document.getElementsByClassName("btn");
+    restartGame[0].addEventListener('click', function() {
+        cells[i].innerHTML = "";
+        gameFunction();
+    });
+    
     function startGame(){
 
         if (player1 == 1) {
@@ -62,11 +67,7 @@ let cells = document.getElementById("board").children;
 
   }
 }
-const restartGame = document.getElementsByClassName("btn");
-restartGame[0].addEventListener('click', function() {
-    cells[i].innerHTML = "";
-    gameFunction();
-});
+
 
     }
 console.log(p1array)
