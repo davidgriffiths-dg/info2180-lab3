@@ -11,6 +11,8 @@ let cells = document.getElementById("board").children;
   var p2array = [];
   console.log("X plays first")
 
+
+
     for(let i=0;i<cells.length;i++){
     cells[i].classList.add("square");
     cells[i].onclick = function(){
@@ -68,8 +70,8 @@ let cells = document.getElementById("board").children;
   }
 }
 
+}
 
-    }
 console.log(p1array)
 console.log(p2array)
 }
